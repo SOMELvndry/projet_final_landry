@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Patrimoine</title>
+        <link rel="stylesheet" href="Patrimoine.css">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    </head>
+    <body>
+      
+        <!-- barre haut -->
+         <div id="navi" class="trans" heigth="40px">
+                      <img src="./bf_logo.png" alt="Logo" height="20" class="logo" align="left">
+
+         <div class="hamburger" onclick="toggleMenu()"> ☰ </div>
+          <div class="nav-links" id="navLinks">
+          <a href="index.html">Page principal</a>
+          <a href="Acceuil.html">Acceuil</a>
+          <a href="Galerie.html">Galerie</a>
+          <a href="Reservation.html">Reservation</a>
+         </div>
+         </div>
+
+         <header>
+        <h1>Bienvenue à Bobo-Dioulasso</h1>
+        <p>Explorez la richesse du patrimoine touristique culturelle et historique de la capitale de l'Ouest burkinabè.</p>
+        <button class="btn-scroll" onclick="document.getElementById('intro').scrollIntoView({ behavior: 'smooth' });">Découvrir</button>
+  </header>
+  <div id="intro">
+   <p align="center">
+        Le patrimoine culturel de Bobo-Dioulasso est bien plus qu’un simple héritage du passé ; il constitue le cœur vivant de l’identité et de la richesse de la région.À travers ses sites historiques, ses monuments religieux, ses musées et ses traditions ancestrales, Bobo-Dioulasso offre un véritable voyage dans le temps, révélant l’histoire, les croyances et le mode de vie de plusieurs générations. Chaque lieu raconte une histoire unique : la vieille mosquée de Dioulassoba, construite en banco selon l’architecture soudano-sahélienne, est un symbole d’unité spirituelle ; les musées communaux préservent les œuvres artisanales et les objets rituels ; les vestiges du royaume du peuple sénoufo témoignent de la grandeur culturelle de cette civilisation.
+Ce patrimoine, encore vivant et accessible, mérite d’être exploré, compris et préservé. En mettant en lumière ces trésors, nous contribuons non seulement à renforcer notre fierté locale, mais aussi à faire rayonner notre culture au-delà des frontières du Burkina Faso.
+    </p>
+  </div>
+  <br>
+      <h1 align="center">Patrimoine touristique de Bobo-Dioulasso</h1><br>
+
+   <div class="conteneur" >
+    <div class="card">
+      <img src="./mosque-of-bobo-dioulasso.jpg" alt="vielle mosque de Dioulassoba">
+      <div class="overlay">
+       <p>Explorez la vielle mosque de Dioulassoba l'un des pilier culturel religieux et touristique de la somptueuse ville de BOBO DIOULASSO</p><br><button><a href="mosquee.html">Consultez</a></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./gettyimages-578342624-612x612.jpg" alt="vieux quartier Dioulassoba">
+      <div class="overlay">
+       <p>Explorez l'ancien quartier Dioulssoba l'un des pilier culturel religieux et touristique de la somptueuse ville de BOBO DIOULASSO</p><br><button><a href="quartier.html">Consultez</a></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./Musée_communal.jpg" alt="Musée_communal de Bobo">
+      <div class="overlay">
+        <p>Explorez le Musée communal Sogossira SANOU BOBO DIOULASSO</p><br></a><button><a href="Musée_communal.html">consulter</a></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./Centre-culturel-senoufo-Rene-fournier.jpg" alt="Musée Senoufo">
+      <div class="overlay">
+        <p>Venez rencontrer les célèbres vestiges du peuple senoufo </p><br><button><a href="senoufo.html">Consultez</a></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./silure_bcp.jpeg" alt="silures">
+      <div class="overlay">
+       <p>Explorez La mare au silures sacres de Bobo-Dioulasso </p><br><button><a href="silure.html">Consultez</a></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Tombe-de-la-Princesse-Guimbi-Ouattara1_.jpg" alt="Marche">
+      <div class="overlay">
+        <p>Venez rendre Hommage a la celebre Princesse Guimbi Ouattara</p><br><button><a href="guimbi.html">Consultez</a></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Cathédrale-Notre-Dame-de-Lourdes.jpg" alt="Musée Senoufo">
+      <div class="overlay">
+        <p>Explorez la cathedrale notre drame de lourdes de Bobo</p><br><button><a href="Cathe.html">Consultez</a></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./7.PNG" alt="Musée De la Musique">
+      <div class="overlay">
+        <p>Venez Visitez le Musée de la Musique de Bobo-Dioulasso</p><br><button><a href="mussemusi.html">Consultez</a></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Maison-de-la-culture-baptisée-Mgr-Anselme-Titianma-Sanon.jpg" alt="Maison de la culture">
+      <div class="overlay">
+        <p>Explorez la maison de la culture de Bobo-Dioulasso</p><br><button><a href="maison.html">Consultez</a></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./sita.png" alt="Cathédrale">
+      <div class="overlay">
+        <p>Visiter la gare ferroviere SITARAIL de Bobo-Dioulasso</p><br><button><a href="sita.html">Consultez</a></button>
+      </div>
+    </div>
+
+ <footer>
+        <p>&copy; 2025 Tourisme Bobo-Dioulasso SOME Landry NOMBRE Yaminou.</p>
+    </footer>
+
+  <script>
+    window.addEventListener('scroll',() =>{
+      const navi = document.getElementById('navi');
+      if(window.scrollY >50){
+        navi.classList.remove('trans');
+        navi.classList.add('solid');
+      }else{
+        navi.classList.remove('solid');
+        navi.classList.add('trans');
+      }
+
+    });
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.fade-in').forEach(section => {
+      observer.observe(section);
+    });
+  
+  function toggleMenu() {
+  const nav = document.getElementById('navLinks');
+  nav.classList.toggle('active');
+}
+</script>
+    </body>
+</html>

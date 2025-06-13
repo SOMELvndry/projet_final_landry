@@ -1,0 +1,335 @@
+/* Reset et configuration de base */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Header et Navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar {
+  margin-top: 10px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+.navbar-content {
+  margin-top: 10px;
+  width: 70%;
+  max-width: 1000px;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.navbar.scrolled .navbar-content {
+  background: #05ca1c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.navbar.scrolled .menu li a {
+  color: white; 
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.diapos {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+  z-index: 1;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.caption {
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+.nav-links a{
+  color: white;
+   text-decoration: none;
+  font-weight: bold;
+
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  background: none;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 5;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 5px;
+}
+
+.next {
+  right: 5px;
+}
+
+/* Titre */
+.titre {
+  padding-top: 100px;
+  background: #f4f4f4;
+  text-align: center;
+  color: green;
+}
+
+.titre h1 {
+  padding: 50px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 30px 20px;
+}
+.card {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      background-color: #fff;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+    .card button{
+      margin-top: 10px;
+      background: yellow;
+      color: white;
+      height: 30px;
+      width: 30%;
+      border-radius: 5px;
+    }
+    .card button a{
+      text-decoration: none;
+    }
+    .overlay {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 128, 0, 0.7);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      box-sizing: border-box;
+      text-align: center;
+      transition: top 0.4s ease;
+    }
+.arg{
+   max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+    text-align: center;
+}
+    .card:hover .overlay {
+      top: 0;
+    }
+
+    .overlay h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .overlay p {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+.Reservation {
+  background:url(./image/hotel1.png);
+}
+footer.copyright {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+   height: 80px;
+}
+
+footer .container p {
+  margin: 0;
+  font-size: 14px;
+}
+.hamburger {
+  display: none;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .navbar.scrolled .navbar-content {
+background-color:rgba(0, 174, 0, 0.3);  
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+  .navbar-content{
+    border-radius: 0px;
+    width: 100%;
+    margin-top: 0;
+  }
+  .slider img{
+      height: 50vh;
+      width: 100%;
+
+  }
+  .slider{
+    margin-bottom: 0;
+    height: 50vh;
+
+  }
+  .diapos{
+        margin-bottom: 0;
+
+  }
+      #navi {
+
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+      .navbar{
+        width:100%;
+
+        border-radius: 0px;
+        padding: 0;
+        margin: 0;
+      }
+.nav-links.active {
+  max-height: 300px;
+    display: flex;
+    width:100%;
+}
+
+      .nav-links {
+        overflow: hidden;
+        max-height: 0;
+        display: flex;
+        flex-direction: column;
+        transition: max-height 0.4s ease;
+        display: none;
+        width: 100%;
+        background-color:rgba(0, 128, 0, 0.4);
+        position: relative;
+        margin-top: 0;
+        top: 100%;
+        z-index: 1000;
+      }
+
+      .nav-links a {
+        background-color:rgba(0, 128, 0, 0.4);
+        padding: 12px;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+      }
+
+      .nav-links.show {
+        background-color:rgba(0, 128, 0, 0.4);
+        display: flex;
+      }
+      .hamburger {
+        /*padding-left: 60px;*/
+        background:none;
+        display: block;
+        /*position: static;*/
+          color: black;
+          font-size: 30px;
+  }
+  .titre {
+  top: 0;
+}
+  footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+    }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projet de site touristique</title>
+  <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="navbar-content">
+        <img src="./bf_logo.png" alt="Logo" height="30">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+          <div class="nav-links" id="nav-links">
+          <a href="Acceuil.html">Acceuil</a>
+          <a href="patrimoine.html">Patrimoine</a>
+          <a href="Reservation.html">Reservation d'hotel</a>
+          <a href="Galerie.html">Galerie</a>
+          <a href="Acceuil.html">Acceuil</a>
+         </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <div class="slider">
+    <div class="diapos">
+      <div class="slide active">
+        <img src="./Centre-culturel-senoufo-Rene-fournier.jpg" alt="Centre culturel Senoufo René Fournier">
+        <div class="caption" style="background: none;color:yellow;">Bienvenue à BOBO DIOULASSO, terre d'accueil</div>
+      </div>
+      <div class="slide" >
+        <img src="./Musée_communal.jpg" alt="Musée communal">
+        <div class="caption" style="background: none;color:yellow;">Musée communal de BOBO DIOULASSO</div>
+      </div>
+      <div class="slide">
+        <img src="./img_8520.jpg" alt="Paysage du Burkina">
+        <div class="caption" style="background: none;color:yellow;">Paysages de Bobo-Dioulasso</div>
+      </div>
+      <div class="slide">
+        <img src="./toile2.PNG" height="100%" width="100%" alt="masques">
+        <div class="caption" style="background: none;color:yellow;">peinture traditionnels</div>
+      </div>
+    </div>
+
+   
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+ 
+  <div class="titre">
+    <h1>Bienvenue sur le site du tourisme de la ville de <p>BOBO DIOULASSO</p></h1>
+  </div>
+  <!--<section id="boite">
+    <h1 class="title">Choissisez une option </h1>
+    <div class="content">
+      <div class="boite1">
+        <img src="Acceuil.png">
+        <div class="content">
+          <div>
+            <h4>Acceuil</h4>
+            <a href="Acceuil.css"> <p>Consultez la page principal</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul>
+    <li><a href="Acceuil.html">Acceuil</a></li>
+    <li><a href="Patrimoine.html">Patrimoine</a></li>
+    </ul>
+  </div>
+  <br>
+  <div class="flexboite2">
+    <ul>
+    <li class="Reservation"><a href="Reservation.html">Reservation d'hotel</a></li>
+    <li><a href="Galerie.html">Galerie</a></li>
+    </ul>
+  </div>-->
+  <h1 align="center">Choissisez une option</h1>
+
+  <div class="container">
+
+    <div class="card">
+      <img src="./Acceuil.jpeg" alt="Acceuil">
+      <div class="overlay">
+        <h3>Acceuil</h3>
+        <p>Consultez la page principal</p><br>
+        <button><a href="Acceuil.html">Consultez</a></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="patrimoine.jpg" alt="Patrimoine">
+      <div class="overlay">
+        <h3>Patrimoine</h3>
+      <p>Explorez le Patrimoine culturel et touristique de la somptueuse ville de BOBO DIOULASSO</p><br>
+        <button><a href="patrimoine.html">Consultez</a></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="hotelpis.PNG" alt="Reservation">
+      <div class="overlay">
+        <h3>Reservation</h3>
+        <p>Reserver vite votre hotel pour un sejour a BOBO DIOULASSO</p><br>
+         <button><a href="Reservation.html">Consultez</a></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="9.PNG" alt="galerie">
+      <div class="overlay">
+        <h3>Galerie</h3>
+        <p>Explorez la galerie d'image de la ville de Bobo-Dioulasso</p>
+         <button><a href="Galerie.html">Consultez</a></button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="page1.js"></script>
+
+  <footer class="copyright">
+    <div class="container">
+      <p>
+        <em>© 2025 Tous droits réservés</em> – 
+        <em>SOME Landry - NOMBRE Yaminou</em>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
